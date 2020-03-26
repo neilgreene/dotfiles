@@ -5,3 +5,11 @@ if [ -n "$TMUX" ]; then
 fi
 # Trigger ~/.bashrc commands
 . ~/.bashrc
+
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.         iterm2_shell_integration.bash"
+source ~/.iterm2_shell_integration.bash
+
+# powerline-daemon -q
+# POWERLINE_BASH_CONTINUATION=1
+# POWERLINE_BASE_SELECT=1
+# source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh

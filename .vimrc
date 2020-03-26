@@ -340,3 +340,10 @@ endfunction
 " START vim-hashicorp-terraform
 let g:terraform_align = 1
 " END vim-hashicorp-terraform
+"
+" powerline
+" set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim/
+set laststatus=2
+set showtabline=1
+set noshowmode
+set t_Co=256
