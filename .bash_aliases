@@ -7,3 +7,7 @@ alias nethack-online='ssh nethack@nethack.alt.org ; clear'
 alias tron-online='ssh sshtron.zachlatta.com ; clear'
 alias glog='git log --oneline --graph --color --all --decorate'
 # alias starwards=`telnet
+alias sroot='sudo su -'
+alias srootl='sudo bash -l'
+alias c19stat='curl https://corona-stats.online'
+alias c19statu='curl https://corona-stats.online/us'

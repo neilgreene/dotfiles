@@ -15,7 +15,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/
 HISTCONTROL=ignoreboth
 
 # allow to change directory by just typing directory name
-shopt -s autocd
+# shopt -s autocd
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -147,18 +147,10 @@ fi
 set -ao vi
 
 # Start my ssh key agent
-eval `ssh-agent -s`
+# eval `ssh-agent -s`
 
 # Now, lets add my ssh keys
 
 # Pepperdine Bastion Host1
 # ssh-add ~/.ssh/id_rsa
 
-# Pepperdine Bastion Host2
-# ssh-add ~/.ssh/id_rsa
-
-# Pepperdine Bastion Host3
-# ssh-add ~/.ssh/id_rsa
-
-# Pepperdine Database Server Key
-# ssh-add ~/.ssh/id_rsa
