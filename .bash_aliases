@@ -11,3 +11,6 @@ alias sroot='sudo su -'
 alias srootl='sudo bash -l'
 alias c19stat='curl https://corona-stats.online'
 alias c19statu='curl https://corona-stats.online/us'
+
+# Pepperdine SSH
+alias rdptunnel='ssh -L 3389:ng-psftwin-vm1:3389 ng-pscm-vm1'

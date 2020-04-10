@@ -347,3 +347,15 @@ set laststatus=2
 set showtabline=1
 set noshowmode
 set t_Co=256
+set relativenumber
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+" Add plugins here
+"
+call vundle#end()
+filetype plugin indent on
