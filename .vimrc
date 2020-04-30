@@ -62,6 +62,7 @@ set noswapfile                    " it's 2015, Vim.
 set undodir=~/.vim/tmp/undo//     " undo files
 set backupdir=~/.vim/tmp/backup// " backups
 set directory=~/.vim/tmp/swap//   " swap files
+"
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
     call mkdir(expand(&undodir), "p")
@@ -76,20 +77,22 @@ endif
 " Resize splits when the window is resized
 au VimResized * :wincmd =
 
-set modelines=1
-set showmode
-set history=700
-set undofile
-set undoreload=10000
-set matchtime=3
-set splitbelow
-set splitright
 set autowrite
 set autoread
+set colorcolumn=+1
+set cursorline
+set history=700
+set linebreak
+set matchtime=3
+set modelines=1
+set splitbelow
+set splitright
 set shiftround
 set title
-set linebreak
-set colorcolumn=+1
+set relativenumber
+set showmode
+set undofile
+set undoreload=10000
 
 " Enable filetype plugins
 filetype plugin on
@@ -392,5 +395,4 @@ set laststatus=2
 set showtabline=1
 set noshowmode
 set t_Co=256
-set relativenumber
 

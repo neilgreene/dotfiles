@@ -13,3 +13,7 @@ source ~/.iterm2_shell_integration.bash
 # POWERLINE_BASH_CONTINUATION=1
 # POWERLINE_BASE_SELECT=1
 # source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+
+export PATH=/Users/neilgreene/bin:$PATH
+
+[[ -e "/Users/neilgreene/lib/oracle-cli/lib/python3.7/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/Users/neilgreene/lib/oracle-cli/lib/python3.7/site-packages/oci_cli/bin/oci_autocomplete.sh"
