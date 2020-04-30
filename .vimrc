@@ -26,6 +26,10 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'ascenator/L9', {'name': 'newL9'}
 " " Install LightLine Plugin
 Plugin 'itchyny/lightline.vim'
+" " Install sneak
+Plugin 'justinmk/vim-sneak'
+" " Install NerdTree
+Plugin 'scrooloose/nerdtree'
 
 "
 " " All of your Plugins must be added before the following line
