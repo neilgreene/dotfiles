@@ -1,3 +1,6 @@
+" colorscheme desert
+" colorscheme darkblue
+"
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -85,6 +88,7 @@ set autowrite
 set autoread
 set colorcolumn=+1
 set cursorline
+hi  cursorLine   cterm=NONE ctermbg=239 ctermfg=NONE
 set history=700
 set linebreak
 set matchtime=3
