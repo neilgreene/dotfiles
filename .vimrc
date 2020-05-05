@@ -1,8 +1,10 @@
 " colorscheme desert
 " colorscheme darkblue
+" colorscheme dracula
 "
 set nocompatible
 filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
@@ -33,6 +35,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'justinmk/vim-sneak'
 " " Install NerdTree
 Plugin 'scrooloose/nerdtree'
+" " VIM Colorschemes
+Plugin 'flazz/vim-colorschemes'
 
 "
 " " All of your Plugins must be added before the following line
@@ -57,10 +61,14 @@ set ttymouse=
 cmap w!! w !sudo tee > /dev/null %
 
 " Highlight characters over 80
-"augroup vimrc_autocmds
-"  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
-"  autocmd BufEnter * match OverLength /\%81v.*/
-"augroup END
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+"
+" Highlight characters over 80
+" augroup vimrc_autocmds
+"   autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
+"   autocmd BufEnter * match OverLength /\%81v.*/
+" augroup END
 
 " Make Vim able to edit crontab files again.
 set backupskip=/tmp/*,/private/tmp/*
@@ -88,7 +96,8 @@ set autowrite
 set autoread
 set colorcolumn=+1
 set cursorline
-hi  cursorLine   cterm=NONE ctermbg=239 ctermfg=NONE
+hi  cursorLine      cterm=NONE     ctermbg=239          ctermfg=NONE
+" hi  cursorLine    cterm=NONE     ctermbg=darkred      ctermfg=white
 set history=700
 set linebreak
 set matchtime=3
