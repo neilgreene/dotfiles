@@ -8,6 +8,7 @@ case $- in
       *) return;;
 esac
 
+export EDITOR=/usr/bin/vim
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -148,12 +149,3 @@ fi
 
 # Enable Command Line Controls
 set -ao vi
-
-# Start my ssh key agent
-# eval `ssh-agent -s`
-
-# Now, lets add my ssh keys
-
-# Pepperdine Bastion Host1
-# ssh-add ~/.ssh/id_rsa
-
